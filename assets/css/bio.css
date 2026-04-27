@@ -1,0 +1,176 @@
+/* =========================================================================
+   Partner bio pages — modern editorial layout
+   Loaded after styles.css, layered on top of the core design system
+   ========================================================================= */
+
+.bio-hero {
+  padding-top: clamp(120px, 16vh, 200px);
+  padding-bottom: clamp(48px, 8vh, 96px);
+  border-bottom: 0;
+  position: relative;
+}
+
+.bio-back {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ink-3); margin-bottom: 36px;
+  padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--hairline);
+  transition: color .25s var(--ease), border-color .25s var(--ease), transform .15s var(--ease);
+}
+.bio-back .arr { transition: transform .25s var(--ease); display: inline-block; }
+.bio-back:hover { color: var(--ink); border-color: var(--ink); }
+.bio-back:hover .arr { transform: translateX(-3px); }
+
+.bio-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .bio-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+.bio-hero-text .eyebrow { margin-bottom: 28px; }
+
+.bio-name {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-variation-settings: 'opsz' 144, 'SOFT' 30;
+  font-weight: 300;
+  font-size: clamp(48px, 7vw, 104px);
+  line-height: .96; letter-spacing: -0.035em;
+  color: var(--ink);
+  margin: 0;
+}
+
+.bio-role {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'SOFT' 100;
+  font-weight: 300;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.2;
+  color: var(--gold);
+  margin: 22px 0 0;
+}
+
+.bio-credentials {
+  margin-top: 18px;
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-3); line-height: 1.6;
+  max-width: 50ch;
+}
+
+.bio-tags {
+  margin-top: 22px;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.bio-tags .tag {
+  display: inline-flex; align-items: center;
+  padding: 6px 14px;
+  border: 1px solid var(--hairline-2);
+  border-radius: 999px;
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-2);
+  background: rgba(244,241,234,.5);
+}
+
+.bio-actions {
+  margin-top: 36px;
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+
+.bio-hero-portrait {
+  position: relative;
+}
+.bio-hero-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--hairline-2);
+  box-shadow: 0 30px 80px -40px rgba(10,14,26,.25);
+  filter: contrast(101%) brightness(1.01);
+}
+.bio-hero-portrait::after {
+  content: ""; position: absolute; inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(180deg, transparent 70%, rgba(10,14,26,.06) 100%);
+  pointer-events: none;
+}
+
+/* --- Body typography --------------------------------------------------- */
+.bio-body {
+  font-size: clamp(17px, 1.15vw, 19px);
+  line-height: 1.75;
+  color: var(--ink-2);
+  max-width: 64ch;
+}
+.bio-body p { margin: 0; }
+.bio-body p + p { margin-top: 22px; }
+.bio-body p:first-of-type::first-line {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  letter-spacing: -0.005em;
+}
+
+/* --- Core competencies ------------------------------------------------- */
+.competencies {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: 0;
+  border-top: 1px solid var(--hairline);
+}
+.competencies li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--hairline);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--ink);
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 14px;
+  align-items: baseline;
+}
+.competencies li::before {
+  content: "→";
+  color: var(--gold);
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 14px;
+}
+
+/* --- Connect block ----------------------------------------------------- */
+.bio-connect { background: var(--paper-2); padding-block: clamp(64px, 9vh, 120px); margin-top: clamp(40px, 6vh, 72px); }
+.bio-connect .connect-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(28px, 3vw, 44px);
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  color: var(--ink);
+  max-width: 18ch;
+  margin: 0 0 18px;
+}
+
+/* Inline LinkedIn icon used inline next to names */
+.linkedin-icon {
+  display: inline-grid; place-items: center;
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--hairline-2);
+  color: var(--ink-2);
+  vertical-align: middle;
+  margin-left: 6px;
+  transition: background .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+.linkedin-icon svg { width: 14px; height: 14px; display: block; }
+.linkedin-icon:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* Print niceties + small-screen tweaks */
+@media (max-width: 600px) {
+  .bio-name { font-size: clamp(40px, 11vw, 68px); }
+  .bio-hero { padding-top: clamp(96px, 14vh, 140px); }
+}
