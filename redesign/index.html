@@ -4,796 +4,210 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nexus Innovations Capital — Where Capital Meets Intelligent Growth</title>
-  <meta name="description" content="Nexus Innovations Capital is a New York innovation investment firm connecting capital, strategy, and execution across AI, SaaS, fintech, biotech, Web3, and public and private markets. Founder support, strategic capital advisory, and emerging technology investment." />
+  <meta name="description" content="Nexus Innovations Capital is a New York innovation investment firm backing companies across AI, SaaS, fintech, biotech, and Web3 — deploying flexible capital across public and private markets with technical due diligence and founder support." />
   <meta name="keywords" content="Nexus Innovations Capital, innovation investment firm, AI investment strategy, emerging technology investment, venture capital support, strategic capital advisory, founder support, private market opportunities, public market analysis, technology investment firm" />
   <meta property="og:title" content="Nexus Innovations Capital — Where Capital Meets Intelligent Growth" />
-  <meta property="og:description" content="A modern innovation and capital firm connecting capital, strategy, innovation, and execution across emerging markets and technology." />
-  <meta property="og:type" content="website" />
-
+  <meta property="og:description" content="A New York innovation and capital firm connecting capital, strategy, and execution across emerging technology and public and private markets." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <style>
-    :root{
-      /* Brand palette */
-      --navy:        #0B2145;   /* deep navy blue — primary */
-      --navy-deep:   #071733;   /* darkest, contrast sections */
-      --navy-soft:   #16305C;
-      --gold:        #B08A4F;   /* metallic gold — accent, used sparingly */
-      --gold-bright: #C9A870;
-      --charcoal:    #2B303A;   /* secondary */
-      --ink:         #15202E;   /* primary text on light */
-      --muted:       #5C6675;   /* secondary text on light */
-      --line:        #E4E7EC;   /* hairlines on light */
-
-      /* Backgrounds */
-      --white:       #FFFFFF;
-      --offwhite:    #F8F6F1;   /* warm off-white */
-      --lightgray:   #EEF1F5;
-
-      --text-on-navy:   #EAF0FA;
-      --muted-on-navy:  #9DB0CE;
-      --line-on-navy:   rgba(255,255,255,.14);
-
-      --maxw: 1220px;
-      --ease: cubic-bezier(.22,.61,.36,1);
-      --shadow-sm: 0 1px 2px rgba(11,33,69,.05), 0 8px 24px rgba(11,33,69,.06);
-      --shadow-md: 0 20px 50px -20px rgba(11,33,69,.28);
-      --shadow-lg: 0 40px 90px -30px rgba(11,33,69,.38);
-    }
-
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-    @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
-    body{
-      margin:0; background:var(--white); color:var(--ink);
-      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-      font-weight:400; line-height:1.6; -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-    }
-    img{ display:block; max-width:100%; }
-    a{ color:inherit; text-decoration:none; }
-    h1,h2,h3,h4{ margin:0; }
-
-    .container{ width:100%; max-width:var(--maxw); margin:0 auto; padding:0 32px; }
-    @media (max-width:640px){ .container{ padding:0 20px; } }
-
-    .display{ font-family:"Libre Caslon Display",Georgia,serif; font-weight:400; letter-spacing:-.01em; line-height:1.06; }
-    .eyebrow{
-      font-size:12px; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
-      color:var(--gold); display:inline-flex; align-items:center; gap:10px;
-    }
-    .eyebrow::before{ content:""; width:26px; height:1px; background:var(--gold); opacity:.7; }
-    .eyebrow.center::after{ content:""; width:26px; height:1px; background:var(--gold); opacity:.7; }
-    .eyebrow.center{ justify-content:center; }
-
-    /* ---------- Buttons ---------- */
-    .btn{
-      display:inline-flex; align-items:center; gap:10px; cursor:pointer;
-      font-weight:500; font-size:15px; letter-spacing:.01em;
-      padding:15px 26px; border-radius:2px; border:1px solid transparent;
-      transition:transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
-    }
-    .btn .arr{ transition:transform .35s var(--ease); }
-    .btn:hover .arr{ transform:translateX(5px); }
-    .btn-gold{ background:var(--gold); color:#fff; }
-    .btn-gold:hover{ background:var(--navy); }
-    .btn-navy{ background:var(--navy); color:#fff; }
-    .btn-navy:hover{ background:var(--gold); }
-    .btn-ghost{ background:transparent; color:var(--navy); border-color:var(--line); }
-    .btn-ghost:hover{ border-color:var(--navy); }
-    .btn-ghost-light{ background:transparent; color:#fff; border-color:var(--line-on-navy); }
-    .btn-ghost-light:hover{ border-color:var(--gold); color:var(--gold-bright); }
-
-    .tlink{ display:inline-flex; align-items:center; gap:9px; font-weight:500; color:var(--navy); }
-    .tlink .arr{ transition:transform .35s var(--ease); color:var(--gold); }
-    .tlink:hover .arr{ transform:translateX(5px); }
-
-    /* ---------- Header ---------- */
-    .site-header{
-      position:fixed; top:0; left:0; right:0; z-index:60;
-      transition:background .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
-      border-bottom:1px solid transparent;
-    }
-    .site-header .bar{ display:flex; align-items:center; justify-content:space-between; height:76px; }
-    .site-header.scrolled{ background:rgba(255,255,255,.92); backdrop-filter:saturate(180%) blur(12px); border-bottom-color:var(--line); box-shadow:0 6px 24px -18px rgba(11,33,69,.4); }
-
-    .brand{ display:flex; align-items:center; gap:12px; }
-    .seal{ width:38px; height:38px; flex:none; }
-    .brand .word{ font-family:"Libre Caslon Display",serif; font-size:19px; line-height:1; color:var(--navy); letter-spacing:.01em; }
-    .brand .word small{ display:block; font-family:"Inter"; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin-top:5px; font-weight:600; }
-    .site-header.scrolled .brand .word{ color:var(--navy); }
-
-    .mainnav{ display:flex; align-items:center; gap:30px; }
-    .mainnav a{ font-size:14.5px; font-weight:500; color:var(--charcoal); position:relative; padding:4px 0; }
-    .mainnav a::after{ content:""; position:absolute; left:0; bottom:-2px; width:0; height:1.5px; background:var(--gold); transition:width .3s var(--ease); }
-    .mainnav a:hover{ color:var(--navy); }
-    .mainnav a:hover::after{ width:100%; }
-    .header-cta{ display:flex; align-items:center; gap:14px; }
-    .burger{ display:none; background:none; border:none; cursor:pointer; padding:8px; }
-    .burger span{ display:block; width:24px; height:2px; background:var(--navy); margin:5px 0; transition:.3s var(--ease); }
-
-    /* over-hero (transparent) state: header text stays dark because hero is light */
-
-    /* ---------- Mobile menu ---------- */
-    .mobile-menu{ position:fixed; inset:0; z-index:70; background:var(--navy-deep); color:#fff; padding:28px; transform:translateX(100%); transition:transform .45s var(--ease); display:flex; flex-direction:column; }
-    .mobile-menu.open{ transform:translateX(0); }
-    .mm-top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:40px; }
-    .mm-close{ background:none; border:none; color:#fff; font-size:15px; cursor:pointer; letter-spacing:.05em; }
-    .mobile-menu a.mlink{ font-family:"Libre Caslon Display",serif; font-size:30px; color:#fff; padding:14px 0; border-bottom:1px solid var(--line-on-navy); }
-    .mobile-menu a.mlink:hover{ color:var(--gold-bright); }
-
-    /* ---------- Hero ---------- */
-    .hero{ position:relative; padding:150px 0 90px; background:
-        radial-gradient(1200px 600px at 85% -5%, rgba(176,138,79,.08), transparent 60%),
-        linear-gradient(180deg, var(--offwhite), var(--white) 70%); overflow:hidden; }
-    .hero-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center; }
-    .hero h1{ font-size:clamp(40px,5.6vw,72px); color:var(--navy); margin:22px 0 24px; }
-    .hero h1 .accent{ font-style:italic; color:var(--gold); }
-    .hero .lead{ font-size:clamp(17px,1.4vw,20px); color:var(--muted); max-width:46ch; }
-    .hero .actions{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
-    .hero-visual{ position:relative; }
-    .hero-visual .frame{ position:relative; border-radius:4px; overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/5; }
-    .hero-visual .frame img{ width:100%; height:100%; object-fit:cover; }
-    .hero-visual .frame::after{ content:""; position:absolute; inset:0; background:linear-gradient(200deg, rgba(11,33,69,0) 40%, rgba(11,33,69,.35)); }
-    .hero-visual .corner{ position:absolute; top:-14px; right:-14px; width:88px; height:88px; border-top:2px solid var(--gold); border-right:2px solid var(--gold); }
-    .float-card{ position:absolute; left:-26px; bottom:34px; background:#fff; border:1px solid var(--line); border-radius:4px; padding:18px 22px; box-shadow:var(--shadow-md); display:flex; align-items:center; gap:16px; }
-    .float-card .k{ font-family:"Libre Caslon Display",serif; font-size:30px; color:var(--navy); line-height:1; }
-    .float-card .v{ font-size:12px; color:var(--muted); letter-spacing:.04em; max-width:15ch; }
-    .float-card .div{ width:1px; height:38px; background:var(--line); }
-
-    /* ---------- Ticker / trust strip ---------- */
-    .trust{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:#fff; }
-    .trust .row{ display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 0; flex-wrap:wrap; }
-    .trust .label{ font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); font-weight:600; }
-    .trust .sectors{ display:flex; gap:28px; flex-wrap:wrap; }
-    .trust .sectors span{ font-family:"Libre Caslon Display",serif; font-size:18px; color:var(--navy); opacity:.85; }
-
-    /* ---------- Section scaffolding ---------- */
-    section{ position:relative; }
-    .band{ padding:110px 0; }
-    .band.tight{ padding:88px 0; }
-    .sec-head{ max-width:760px; margin-bottom:56px; }
-    .sec-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
-    .sec-head h2{ font-size:clamp(30px,3.6vw,46px); color:var(--navy); margin-top:18px; }
-    .sec-head p{ color:var(--muted); font-size:17px; margin-top:18px; }
-
-    /* ---------- About ---------- */
-    .about{ background:var(--white); }
-    .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
-    .about-copy h2{ font-size:clamp(28px,3.3vw,42px); color:var(--navy); line-height:1.12; margin:18px 0 22px; }
-    .about-copy p{ color:var(--muted); font-size:17px; }
-    .about-copy p + p{ margin-top:16px; }
-    .about-chips{ display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
-    .chip{ border:1px solid var(--line); border-radius:40px; padding:9px 18px; font-size:13.5px; color:var(--charcoal); font-weight:500; }
-    .chip b{ color:var(--gold); font-weight:600; }
-    .about-visual{ position:relative; border-radius:4px; overflow:hidden; box-shadow:var(--shadow-md); aspect-ratio:5/6; }
-    .about-visual img{ width:100%; height:100%; object-fit:cover; }
-    .about-visual .tag{ position:absolute; left:22px; bottom:22px; background:rgba(7,23,51,.82); backdrop-filter:blur(4px); color:#fff; font-size:12px; letter-spacing:.05em; padding:10px 16px; border-radius:2px; }
-
-    /* ---------- Focus cards ---------- */
-    .focus{ background:var(--offwhite); }
-    .focus-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; }
-    .fcard{ background:#fff; padding:34px 28px; transition:background .35s var(--ease), transform .35s var(--ease); position:relative; }
-    .fcard:hover{ background:var(--navy); transform:translateY(-2px); z-index:2; box-shadow:var(--shadow-md); }
-    .fcard .ic{ width:40px; height:40px; color:var(--gold); margin-bottom:22px; }
-    .fcard:hover .ic{ color:var(--gold-bright); }
-    .fcard h3{ font-size:19px; color:var(--navy); margin-bottom:10px; font-weight:600; letter-spacing:-.01em; }
-    .fcard p{ font-size:14px; color:var(--muted); line-height:1.6; }
-    .fcard .no{ position:absolute; top:20px; right:22px; font-size:12px; color:var(--muted); font-weight:600; letter-spacing:.05em; opacity:.55; }
-    .fcard:hover h3{ color:#fff; }
-    .fcard:hover p,.fcard:hover .no{ color:var(--muted-on-navy); }
-
-    /* ---------- Contrast band (the one strong dark section) ---------- */
-    .contrast{ position:relative; padding:130px 0; color:var(--text-on-navy); overflow:hidden; background:var(--navy-deep); }
-    .contrast .bg{ position:absolute; inset:0; z-index:0; }
-    .contrast .bg img{ width:100%; height:100%; object-fit:cover; opacity:.28; }
-    .contrast::after{ content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(120deg, rgba(7,23,51,.94) 30%, rgba(7,23,51,.7)); }
-    .contrast .container{ position:relative; z-index:2; }
-    .contrast h2{ font-size:clamp(32px,4.4vw,58px); color:#fff; max-width:18ch; line-height:1.08; }
-    .contrast h2 .accent{ font-style:italic; color:var(--gold-bright); }
-    .contrast .lead{ color:var(--muted-on-navy); max-width:52ch; margin-top:24px; font-size:18px; }
-    .contrast .stats{ display:flex; gap:56px; margin-top:52px; flex-wrap:wrap; }
-    .contrast .stats .s .k{ font-family:"Libre Caslon Display",serif; font-size:26px; color:var(--gold-bright); }
-    .contrast .stats .s .v{ font-size:13.5px; color:var(--muted-on-navy); margin-top:6px; letter-spacing:.03em; }
-
-    /* ---------- Why Nexus ---------- */
-    .why{ background:#fff; }
-    .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:36px 40px; }
-    .why-item{ padding-top:22px; border-top:1px solid var(--line); }
-    .why-item .n{ font-size:12px; font-weight:700; color:var(--gold); letter-spacing:.08em; }
-    .why-item h4{ font-size:17px; color:var(--navy); margin:12px 0 8px; font-weight:600; }
-    .why-item p{ font-size:14px; color:var(--muted); }
-
-    /* ---------- Capabilities ---------- */
-    .caps{ background:var(--lightgray); }
-    .caps-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden; }
-    .cap{ background:#fff; padding:28px 30px; display:flex; gap:20px; align-items:flex-start; transition:background .3s var(--ease); }
-    .cap:hover{ background:var(--offwhite); }
-    .cap .num{ font-family:"Libre Caslon Display",serif; font-size:22px; color:var(--gold); flex:none; width:44px; }
-    .cap h4{ font-size:17px; color:var(--navy); font-weight:600; margin-bottom:6px; }
-    .cap p{ font-size:14px; color:var(--muted); }
-
-    /* ---------- Leadership ---------- */
-    .lead-sec{ background:#fff; }
-    .lead-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:60px; align-items:center; }
-    .lead-visual{ position:relative; border-radius:4px; overflow:hidden; box-shadow:var(--shadow-md); aspect-ratio:4/5; }
-    .lead-visual img{ width:100%; height:100%; object-fit:cover; }
-    .lead-visual::after{ content:""; position:absolute; inset:0; background:linear-gradient(200deg, rgba(11,33,69,0) 45%, rgba(11,33,69,.4)); }
-    .lead-copy .quote{ font-family:"Libre Caslon Display",serif; font-size:clamp(24px,2.7vw,34px); color:var(--navy); line-height:1.28; }
-    .lead-copy .quote::before{ content:"“"; color:var(--gold); font-size:1.2em; line-height:0; margin-right:2px; }
-    .lead-copy .sign{ margin-top:34px; display:flex; align-items:center; gap:16px; }
-    .lead-copy .sign .line{ width:44px; height:1px; background:var(--gold); }
-    .lead-copy .sign .who b{ display:block; color:var(--navy); font-size:16px; }
-    .lead-copy .sign .who span{ font-size:13.5px; color:var(--muted); }
-
-    /* ---------- Team ---------- */
-    .team{ background:var(--offwhite); }
-    .team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
-    .tcard{ background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden; transition:transform .35s var(--ease), box-shadow .35s var(--ease); }
-    .tcard:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); }
-    .tcard .pic{ aspect-ratio:1/1; overflow:hidden; background:var(--lightgray); }
-    .tcard .pic img{ width:100%; height:100%; object-fit:cover; filter:grayscale(12%); transition:filter .4s var(--ease), transform .6s var(--ease); }
-    .tcard:hover .pic img{ filter:grayscale(0); transform:scale(1.03); }
-    .tcard .meta{ padding:22px 24px; }
-    .tcard .role{ font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:600; }
-    .tcard .name{ font-family:"Libre Caslon Display",serif; font-size:23px; color:var(--navy); margin-top:8px; }
-
-    /* ---------- Partner ---------- */
-    .partner{ background:#fff; }
-    .partner-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-    .pcard{ border:1px solid var(--line); border-radius:6px; padding:38px 32px; transition:border-color .35s var(--ease), transform .35s var(--ease), box-shadow .35s var(--ease); position:relative; overflow:hidden; }
-    .pcard::before{ content:""; position:absolute; left:0; top:0; height:3px; width:0; background:var(--gold); transition:width .45s var(--ease); }
-    .pcard:hover{ transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:transparent; }
-    .pcard:hover::before{ width:100%; }
-    .pcard .pn{ font-size:12px; color:var(--gold); font-weight:700; letter-spacing:.1em; }
-    .pcard h3{ font-family:"Libre Caslon Display",serif; font-size:27px; color:var(--navy); margin:14px 0 14px; }
-    .pcard p{ font-size:15px; color:var(--muted); }
-    .pcard .plink{ margin-top:22px; display:inline-flex; }
-
-    /* ---------- Contact ---------- */
-    .contact{ background:var(--navy-deep); color:var(--text-on-navy); padding:120px 0; }
-    .contact-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:64px; }
-    .contact h2{ font-size:clamp(30px,3.6vw,46px); color:#fff; margin:18px 0 20px; }
-    .contact .lead{ color:var(--muted-on-navy); font-size:17px; max-width:40ch; }
-    .contact-info{ margin-top:40px; display:flex; flex-direction:column; gap:22px; }
-    .contact-info .ci{ display:flex; gap:16px; align-items:flex-start; }
-    .contact-info .ci .ic{ width:20px; height:20px; color:var(--gold-bright); flex:none; margin-top:3px; }
-    .contact-info .ci .t small{ display:block; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted-on-navy); margin-bottom:4px; }
-    .contact-info .ci .t a,.contact-info .ci .t span{ color:#fff; font-size:15px; }
-
-    form.card{ background:#fff; border-radius:8px; padding:38px; box-shadow:var(--shadow-lg); }
-    .field{ margin-bottom:18px; }
-    .field.row2{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:0; }
-    label{ display:block; font-size:12.5px; font-weight:600; color:var(--charcoal); letter-spacing:.03em; margin-bottom:8px; }
-    input,select,textarea{ width:100%; font-family:inherit; font-size:15px; color:var(--ink); background:var(--offwhite); border:1px solid var(--line); border-radius:3px; padding:13px 15px; transition:border-color .25s var(--ease), background .25s var(--ease), box-shadow .25s var(--ease); }
-    input:focus,select:focus,textarea:focus{ outline:none; border-color:var(--gold); background:#fff; box-shadow:0 0 0 3px rgba(176,138,79,.12); }
-    textarea{ min-height:120px; resize:vertical; }
-    .form-note{ font-size:12.5px; color:var(--muted); margin-top:14px; }
-    .form-status{ font-size:14px; margin-top:14px; display:none; }
-
-    /* ---------- CTA closing ---------- */
-    .cta-close{ background:var(--offwhite); text-align:center; padding:110px 0; }
-    .cta-close h2{ font-size:clamp(30px,4vw,52px); color:var(--navy); max-width:20ch; margin:0 auto 22px; }
-    .cta-close h2 .accent{ font-style:italic; color:var(--gold); }
-    .cta-close .actions{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:8px; }
-
-    /* ---------- Footer ---------- */
-    .footer{ background:var(--navy-deep); color:var(--muted-on-navy); padding:70px 0 40px; border-top:1px solid var(--line-on-navy); }
-    .foot-grid{ display:grid; grid-template-columns:2fr 1fr 1fr 1.3fr; gap:40px; }
-    .footer .word{ font-family:"Libre Caslon Display",serif; font-size:20px; color:#fff; }
-    .footer .fabout{ font-size:14px; margin:18px 0; max-width:34ch; }
-    .footer .faddr{ font-size:13px; color:var(--muted-on-navy); line-height:1.7; }
-    .footer h5{ color:#fff; font-size:12px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:18px; font-weight:600; }
-    .footer ul{ list-style:none; margin:0; padding:0; }
-    .footer ul li{ margin-bottom:12px; }
-    .footer ul a{ font-size:14px; color:var(--muted-on-navy); transition:color .25s; }
-    .footer ul a:hover{ color:var(--gold-bright); }
-    .foot-bottom{ display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-top:50px; padding-top:26px; border-top:1px solid var(--line-on-navy); font-size:13px; }
-    .foot-legal{ margin-top:26px; font-size:11.5px; line-height:1.7; color:#6d80a0; max-width:1000px; }
-
-    /* ---------- Reveal animation ---------- */
-    .reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
-    .reveal.in{ opacity:1; transform:none; }
-    .reveal.d1{ transition-delay:.08s; } .reveal.d2{ transition-delay:.16s; }
-    .reveal.d3{ transition-delay:.24s; } .reveal.d4{ transition-delay:.32s; }
-    @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
-
-    /* ---------- Responsive ---------- */
-    @media (max-width:1000px){
-      .mainnav,.header-cta .btn{ display:none; }
-      .burger{ display:block; }
-      .hero-grid,.about-grid,.lead-grid,.contact-grid{ grid-template-columns:1fr; gap:44px; }
-      .hero-visual{ max-width:460px; margin:0 auto; }
-      .focus-grid,.why-grid{ grid-template-columns:repeat(2,1fr); }
-      .team-grid,.partner-grid{ grid-template-columns:1fr 1fr; }
-    }
-    @media (max-width:640px){
-      .band{ padding:76px 0; } .contrast,.contact,.cta-close{ padding:84px 0; }
-      .caps-grid{ grid-template-columns:1fr; }
-      .focus-grid,.why-grid,.team-grid,.partner-grid{ grid-template-columns:1fr; }
-      .foot-grid{ grid-template-columns:1fr 1fr; }
-      .field.row2{ grid-template-columns:1fr; gap:0; }
-      .float-card{ left:12px; }
-      .hero{ padding-top:120px; }
-      .contrast .stats{ gap:32px; }
-    }
-  </style>
+  <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-<!-- ============================ HEADER ============================ -->
 <header class="site-header" id="header">
   <div class="container bar">
-    <a href="#top" class="brand" aria-label="Nexus Innovations Capital home">
-      <svg class="seal" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="1" y="1" width="38" height="38" rx="7" fill="#0B2145"/>
-        <rect x="1" y="1" width="38" height="38" rx="7" stroke="#B08A4F" stroke-width="1.4"/>
-        <path d="M11 29 V11 L29 29 V11" stroke="#C9A870" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <a href="index.html" class="brand" aria-label="Nexus Innovations Capital home">
+      <img class="seal" src="assets/logo-mark.png" alt="Nexus Innovations Capital" />
       <span class="word">Nexus Innovations<small>Capital · New York</small></span>
     </a>
     <nav class="mainnav" aria-label="Primary">
-      <a href="#about">Firm</a>
-      <a href="#focus">Focus</a>
-      <a href="#why">Why Nexus</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#team">Team</a>
-      <a href="#partner">Partner</a>
+      <a href="about.html">Firm</a>
+      <a href="focus.html">Focus</a>
+      <a href="why.html">Why Nexus</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="team.html">Team</a>
+      <a href="partner.html">Partner</a>
     </nav>
     <div class="header-cta">
-      <a href="#contact" class="btn btn-navy">Partner With Us <span class="arr">→</span></a>
+      <a href="contact.html" class="btn btn-navy">Contact <span class="arr">→</span></a>
       <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <div class="mm-top">
-    <span class="eyebrow" style="color:var(--gold-bright)">Menu</span>
-    <button class="mm-close" id="mmClose" aria-label="Close menu">Close ✕</button>
-  </div>
-  <a class="mlink" href="#about">Firm</a>
-  <a class="mlink" href="#focus">Investment Focus</a>
-  <a class="mlink" href="#why">Why Nexus</a>
-  <a class="mlink" href="#capabilities">Capabilities</a>
-  <a class="mlink" href="#team">Team</a>
-  <a class="mlink" href="#partner">Partner With Us</a>
-  <div style="margin-top:32px"><a href="#contact" class="btn btn-gold">Contact the firm →</a></div>
+  <div class="mm-top"><span class="eyebrow light">Menu</span><button class="mm-close" id="mmClose" aria-label="Close menu">Close ✕</button></div>
+  <a class="mlink" href="about.html">Firm</a>
+  <a class="mlink" href="focus.html">Investment Focus</a>
+  <a class="mlink" href="why.html">Why Nexus</a>
+  <a class="mlink" href="capabilities.html">Capabilities</a>
+  <a class="mlink" href="team.html">Team</a>
+  <a class="mlink" href="partner.html">Partner With Us</a>
+  <div style="margin-top:28px"><a href="contact.html" class="btn btn-gold">Contact the firm →</a></div>
 </div>
 
-<main id="top">
+<main>
 
-  <!-- ============================ HERO ============================ -->
-  <section class="hero" id="hero">
+  <!-- HERO -->
+  <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="eyebrow reveal">Nexus Innovations Capital · New York</span>
         <h1 class="display reveal d1">Where capital meets <span class="accent">intelligent growth.</span></h1>
-        <p class="lead reveal d2">Nexus Innovations Capital helps identify, support, and scale high-potential opportunities across emerging markets, technology, and strategic investments.</p>
+        <p class="lead reveal d2">We identify, back, and scale high-potential companies across AI, fintech, biotech, and Web3 — deploying flexible capital across public and private markets, with technical diligence and hands-on founder support.</p>
         <div class="actions reveal d3">
-          <a href="#focus" class="btn btn-gold">Explore Our Focus <span class="arr">→</span></a>
-          <a href="#partner" class="btn btn-ghost">Partner With Us</a>
+          <a href="focus.html" class="btn btn-gold">Explore Our Focus <span class="arr">→</span></a>
+          <a href="partner.html" class="btn btn-ghost">Partner With Us</a>
         </div>
       </div>
       <div class="hero-visual reveal d2">
-        <div class="frame">
-          <img src="https://images.pexels.com/photos/16042185/pexels-photo-16042185.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Downtown Manhattan skyline with One World Trade Center under dramatic daylight clouds" loading="eager" />
+        <div class="hero-frame">
+          <img src="https://images.pexels.com/photos/16042185/pexels-photo-16042185.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="New York City skyline" />
+          <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/16042185/pexels-photo-16042185.jpeg?auto=compress&cs=tinysrgb&w=1000">
+            <source src="https://videos.pexels.com/video-files/35419124/15006308_1080_1920_30fps.mp4" type="video/mp4" />
+          </video>
+          <button class="vidctl" data-videoctl="heroVideo" aria-label="Play or pause background video">
+            <svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+            <span class="lbl">Pause</span>
+          </button>
         </div>
         <span class="corner" aria-hidden="true"></span>
-        <div class="float-card">
-          <span class="k">NYC</span>
-          <span class="div" aria-hidden="true"></span>
-          <span class="v">Public &amp; private markets · Innovation-driven investing</span>
-        </div>
+        <div class="float-card"><span class="k">NYC</span><span class="divv"></span><span class="v">Public &amp; private markets · Innovation-driven investing</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ============================ TRUST STRIP ============================ -->
+  <!-- TRUST STRIP -->
   <section class="trust">
     <div class="container row">
       <span class="label">Investing across</span>
-      <div class="sectors">
-        <span>Artificial Intelligence</span>
-        <span>SaaS</span>
-        <span>Fintech</span>
-        <span>Biotech</span>
-        <span>Web3</span>
-        <span>Public &amp; Private Markets</span>
-      </div>
+      <div class="sectors"><span>Artificial Intelligence</span><span>SaaS</span><span>Fintech</span><span>Biotech</span><span>Web3</span><span>Public &amp; Private Markets</span></div>
     </div>
   </section>
 
-  <!-- ============================ ABOUT ============================ -->
-  <section class="band about" id="about">
-    <div class="container about-grid">
-      <div class="about-copy">
+  <!-- ABOUT TEASER -->
+  <section class="band bg-white">
+    <div class="container split">
+      <div class="copy">
         <span class="eyebrow reveal">The Firm</span>
-        <h2 class="reveal d1">Built for the next era of investment and innovation.</h2>
-        <p class="reveal d2">Nexus Innovations Capital is built for the next era of investment and innovation. We focus on opportunities where technology, capital, and strategy come together to create long-term value.</p>
-        <p class="reveal d2">A New York firm connecting capital, strategy, innovation, and execution — we partner with bold founders and breakthrough technologies across public and private markets, pairing flexible capital with operational depth and data-informed insight.</p>
-        <div class="about-chips reveal d3">
-          <span class="chip"><b>·</b> New York City</span>
-          <span class="chip"><b>·</b> Founder-first partnership</span>
-          <span class="chip"><b>·</b> Public &amp; private markets</span>
-          <span class="chip"><b>·</b> Data-driven conviction</span>
-        </div>
+        <h2 class="reveal d1">Capital, strategy, and execution — brought together.</h2>
+        <p class="reveal d2">Nexus Innovations Capital partners with bold founders and breakthrough technologies. We combine flexible capital with technical due diligence across AI, cybersecurity, telecom, and quantum computing — and back that with operating support in talent, go-to-market, and capital strategy.</p>
+        <p class="reveal d2">By investing across both public and private markets, we use signals from mature technology companies to sharpen private conviction, and access to private innovation to inform our public-market view.</p>
+        <div class="reveal d3" style="margin-top:32px"><a href="about.html" class="tlink">More about the firm <span class="arr">→</span></a></div>
       </div>
-      <div class="about-visual reveal d2">
-        <img src="https://images.pexels.com/photos/10298352/pexels-photo-10298352.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Modern building facade of geometric glass panels and steel structure" loading="lazy" />
-        <span class="tag">Modern architecture · Structural precision</span>
+      <div class="media-frame reveal d2" data-lightbox data-full="https://images.pexels.com/photos/10298352/pexels-photo-10298352.jpeg?auto=compress&cs=tinysrgb&w=1600" data-cap="Modern architecture — structural precision">
+        <img src="https://images.pexels.com/photos/10298352/pexels-photo-10298352.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Modern building facade of geometric glass and steel" loading="lazy" />
+        <span class="tag">Click to enlarge</span>
       </div>
     </div>
   </section>
 
-  <!-- ============================ INVESTMENT FOCUS ============================ -->
-  <section class="band focus" id="focus">
+  <!-- FOCUS TEASER -->
+  <section class="band bg-offwhite">
     <div class="container">
       <div class="sec-head reveal">
         <span class="eyebrow">Investment Focus</span>
-        <h2 class="display">Where we deploy capital and conviction.</h2>
-        <p>Eight areas where technology, capital, and strategy converge — each backed by research, discipline, and hands-on partnership.</p>
+        <h2 class="display">Eight areas where technology, capital, and strategy converge.</h2>
+        <p>Each backed by research, technical diligence, and hands-on partnership.</p>
       </div>
       <div class="focus-grid reveal d1">
-        <!-- 1 -->
-        <article class="fcard">
-          <span class="no">01</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
-          <h3>Artificial Intelligence</h3>
-          <p>Foundation models, applied AI, and intelligent infrastructure — backing the systems defining the next decade of computing.</p>
-        </article>
-        <!-- 2 -->
-        <article class="fcard">
-          <span class="no">02</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <h3>SaaS</h3>
-          <p>Vertical and AI-native software platforms built for the operators and enterprises of tomorrow.</p>
-        </article>
-        <!-- 3 -->
-        <article class="fcard">
-          <span class="no">03</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 17l5-5 4 3 7-8"/><path d="M21 7v5M21 7h-5"/></svg>
-          <h3>Fintech</h3>
-          <p>Payments, capital-markets infrastructure, and embedded finance reshaping how capital moves.</p>
-        </article>
-        <!-- 4 -->
-        <article class="fcard">
-          <span class="no">04</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 3v4l-3 6a4 4 0 004 6h6a4 4 0 004-6l-3-6V3"/><path d="M7 3h10M9 14h6"/></svg>
-          <h3>Biotech</h3>
-          <p>Computational biology and life-science innovation at the frontier of human health.</p>
-        </article>
-        <!-- 5 -->
-        <article class="fcard">
-          <span class="no">05</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M12 6.5v7M8.5 8.5l7 3.5M15.5 8.5l-7 3.5"/></svg>
-          <h3>Web3</h3>
-          <p>Decentralized infrastructure and digital-asset systems built for durability, not hype.</p>
-        </article>
-        <!-- 6 -->
-        <article class="fcard">
-          <span class="no">06</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M9 20V4M14 20v-7M19 20V8"/><path d="M3 20h18"/></svg>
-          <h3>Public Markets</h3>
-          <p>Disciplined public-market analysis that informs conviction across the full investment lifecycle.</p>
-        </article>
-        <!-- 7 -->
-        <article class="fcard">
-          <span class="no">07</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18"/><path d="M6 7h9a3 3 0 010 6H6M6 13h11"/></svg>
-          <h3>Private Markets</h3>
-          <p>Early- and growth-stage private opportunities sourced through proprietary networks and research.</p>
-        </article>
-        <!-- 8 -->
-        <article class="fcard">
-          <span class="no">08</span>
-          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0112 0"/><path d="M16 6l2 2 4-4"/></svg>
-          <h3>Strategic Founder Support</h3>
-          <p>Hands-on operating partnership — strategy, talent, and execution alongside exceptional founders.</p>
-        </article>
+        <article class="fcard"><span class="no">01</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><h3>Artificial Intelligence</h3><p>Foundation models, applied AI, and the AI–quantum frontier.</p></article>
+        <article class="fcard"><span class="no">02</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3>SaaS</h3><p>Vertical and AI-native software for modern operators.</p></article>
+        <article class="fcard"><span class="no">03</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 17l5-5 4 3 7-8"/><path d="M21 7v5M21 7h-5"/></svg><h3>Fintech</h3><p>Payments, capital-markets infrastructure, embedded finance.</p></article>
+        <article class="fcard"><span class="no">04</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 3v4l-3 6a4 4 0 004 6h6a4 4 0 004-6l-3-6V3"/><path d="M7 3h10M9 14h6"/></svg><h3>Biotech</h3><p>Computational biology and life-science innovation.</p></article>
+        <article class="fcard"><span class="no">05</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M12 6.5v7M8.5 8.5l7 3.5M15.5 8.5l-7 3.5"/></svg><h3>Web3</h3><p>Decentralized infrastructure built for durability.</p></article>
+        <article class="fcard"><span class="no">06</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M9 20V4M14 20v-7M19 20V8"/><path d="M3 20h18"/></svg><h3>Public Markets</h3><p>Disciplined public-market analysis and conviction.</p></article>
+        <article class="fcard"><span class="no">07</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18"/><path d="M6 7h9a3 3 0 010 6H6M6 13h11"/></svg><h3>Private Markets</h3><p>Early- and growth-stage private opportunities.</p></article>
+        <article class="fcard"><span class="no">08</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0112 0"/><path d="M16 6l2 2 4-4"/></svg><h3>Strategic Founder Support</h3><p>Operating partnership alongside exceptional founders.</p></article>
       </div>
+      <div class="reveal d2" style="margin-top:40px;display:flex;justify-content:flex-end"><a href="focus.html" class="tlink">See our full investment focus <span class="arr">→</span></a></div>
     </div>
   </section>
 
-  <!-- ============================ CONTRAST BAND ============================ -->
+  <!-- CONTRAST VIDEO BAND -->
   <section class="contrast">
-    <div class="bg" aria-hidden="true">
-      <img src="https://images.pexels.com/photos/16042185/pexels-photo-16042185.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="" loading="lazy" />
+    <div class="bg" aria-hidden="true" data-hovervideo>
+      <video autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/16042185/pexels-photo-16042185.jpeg?auto=compress&cs=tinysrgb&w=1600"><source src="https://videos.pexels.com/video-files/12197806/12197806-sd_960_540_24fps.mp4" type="video/mp4" /></video>
     </div>
     <div class="container">
-      <span class="eyebrow reveal">Our Approach</span>
+      <span class="eyebrow light reveal">Our Approach</span>
       <h2 class="display reveal d1" style="margin-top:18px">Built where capital meets <span class="accent">conviction.</span></h2>
-      <p class="lead reveal d2">We combine analytical rigor, proactive foresight, and an integrated investment philosophy — functioning as a strategic partner, not merely a source of capital.</p>
+      <p class="lead reveal d2">We function as a strategic partner, not merely a source of capital — combining analytical rigor, technical foresight, and an integrated philosophy that bridges public and private markets.</p>
       <div class="stats reveal d3">
         <div class="s"><div class="k">Research-led</div><div class="v">Conviction grounded in data</div></div>
-        <div class="s"><div class="k">Long-term</div><div class="v">Durable value creation</div></div>
+        <div class="s"><div class="k">Rigor over hype</div><div class="v">Substance before trends</div></div>
         <div class="s"><div class="k">Founder-first</div><div class="v">Aligned from day one</div></div>
         <div class="s"><div class="k">NYC</div><div class="v">Public &amp; private markets</div></div>
       </div>
+      <div class="reveal d4" style="margin-top:44px"><a href="why.html" class="btn btn-ghost-light">Why Nexus <span class="arr">→</span></a></div>
     </div>
   </section>
 
-  <!-- ============================ WHY NEXUS ============================ -->
-  <section class="band why" id="why">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Why Nexus</span>
-        <h2 class="display">Why founders, investors, and partners trust Nexus.</h2>
-        <p>A disciplined, transparent partnership built on rigor over hype — and alignment at every stage.</p>
-      </div>
-      <div class="why-grid">
-        <div class="why-item reveal"><div class="n">01</div><h4>Strategic Market Insight</h4><p>A research-led view of where markets, technology, and capital are converging next.</p></div>
-        <div class="why-item reveal d1"><div class="n">02</div><h4>Data-Informed Decisions</h4><p>Every conviction is grounded in analysis — not narrative or momentum.</p></div>
-        <div class="why-item reveal d2"><div class="n">03</div><h4>Access to Opportunities</h4><p>Proprietary networks across founders, operators, and institutions.</p></div>
-        <div class="why-item reveal d3"><div class="n">04</div><h4>Long-Term Growth Mindset</h4><p>We invest for durable value creation, not short-term momentum.</p></div>
-        <div class="why-item reveal"><div class="n">05</div><h4>Founder &amp; Investor Alignment</h4><p>Incentives and expectations aligned from the first conversation.</p></div>
-        <div class="why-item reveal d1"><div class="n">06</div><h4>Professional Execution</h4><p>Institutional discipline applied to every stage of the partnership.</p></div>
-        <div class="why-item reveal d2"><div class="n">07</div><h4>Clear Communication</h4><p>Direct, transparent dialogue at every step of the relationship.</p></div>
-        <div class="why-item reveal d3"><div class="n">08</div><h4>Disciplined Strategy</h4><p>A defined thesis and repeatable process behind every decision.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ CAPABILITIES ============================ -->
-  <section class="band caps" id="capabilities">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Capabilities</span>
-        <h2 class="display">How we create long-term value.</h2>
-        <p>Integrated services spanning strategy, research, and execution — across public and private markets.</p>
-      </div>
-      <div class="caps-grid reveal d1">
-        <div class="cap"><span class="num">Ⅰ</span><div><h4>Investment Strategy</h4><p>Thesis development and portfolio construction across public and private markets.</p></div></div>
-        <div class="cap"><span class="num">Ⅱ</span><div><h4>Market Research</h4><p>Primary and quantitative research that sharpens conviction and timing.</p></div></div>
-        <div class="cap"><span class="num">Ⅲ</span><div><h4>Venture Support</h4><p>Operating support for portfolio companies from early stage to scale.</p></div></div>
-        <div class="cap"><span class="num">Ⅳ</span><div><h4>Capital Advisory</h4><p>Guidance on capital structure, fundraising, and strategic financing.</p></div></div>
-        <div class="cap"><span class="num">Ⅴ</span><div><h4>Founder Growth Support</h4><p>Talent, go-to-market, and leadership support for exceptional founders.</p></div></div>
-        <div class="cap"><span class="num">Ⅵ</span><div><h4>Public &amp; Private Market Analysis</h4><p>Cross-market intelligence that informs allocation and conviction.</p></div></div>
-        <div class="cap"><span class="num">Ⅶ</span><div><h4>Innovation Consulting</h4><p>Advisory for institutions navigating emerging technology.</p></div></div>
-        <div class="cap"><span class="num">Ⅷ</span><div><h4>Strategic Partnership Support</h4><p>Structuring and stewarding partnerships that compound value.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ LEADERSHIP ============================ -->
-  <section class="band lead-sec">
-    <div class="container lead-grid">
-      <div class="lead-visual reveal">
-        <img src="https://images.pexels.com/photos/7433898/pexels-photo-7433898.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Senior leader presenting growth charts during a strategy meeting" loading="lazy" />
-      </div>
-      <div class="lead-copy">
-        <span class="eyebrow reveal">Leadership</span>
-        <p class="quote reveal d1" style="margin-top:20px">At Nexus Innovations Capital, we believe innovation requires more than ideas. It requires strategy, discipline, capital, and the right partners. Our role is to help identify meaningful opportunities and support long-term value creation.”</p>
-        <div class="sign reveal d2">
-          <span class="line" aria-hidden="true"></span>
-          <div class="who"><b>Carl Louis</b><span>Founder, President &amp; CEO · Nexus Innovations Capital</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ TEAM ============================ -->
-  <section class="band team" id="team">
-    <div class="container">
-      <div class="sec-head reveal">
-        <span class="eyebrow">Leadership Team</span>
-        <h2 class="display">An entrepreneurial builder-operator team.</h2>
-        <p>Experienced founders and operators offering founder-first partnership, hands-on support, and strategic guidance.</p>
-      </div>
-      <div class="team-grid">
-        <article class="tcard reveal"><div class="pic"><img src="../assets/img/team/carl-louis.jpg" alt="Carl Louis"></div><div class="meta"><div class="role">Founder, President &amp; CEO</div><div class="name">Carl Louis</div></div></article>
-        <article class="tcard reveal d1"><div class="pic"><img src="../assets/img/team/gedeon-dieudonne-jr.jpg" alt="Gedeon Dieudonne Jr."></div><div class="meta"><div class="role">General Partner</div><div class="name">Gedeon Dieudonne Jr.</div></div></article>
-        <article class="tcard reveal d2"><div class="pic"><img src="../assets/img/team/jean-rene-destin.png" alt="Jean René Destin"></div><div class="meta"><div class="role">General Partner</div><div class="name">Jean René Destin</div></div></article>
-        <article class="tcard reveal"><div class="pic"><img src="../assets/img/team/gregory-pascal.png" alt="Gregory Pascal"></div><div class="meta"><div class="role">General Partner</div><div class="name">Gregory Pascal</div></div></article>
-        <article class="tcard reveal d1"><div class="pic"><img src="../assets/img/team/gonzalez-fanord.png" alt="Gonzalez Fanord"></div><div class="meta"><div class="role">General Partner</div><div class="name">Gonzalez Fanord</div></div></article>
-        <article class="tcard reveal d2"><div class="pic"><img src="../assets/img/team/smith-pierre.png" alt="Smith Pierre"></div><div class="meta"><div class="role">General Partner</div><div class="name">Smith Pierre</div></div></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================ PARTNER WITH US ============================ -->
-  <section class="band partner" id="partner">
+  <!-- PARTNER TEASER -->
+  <section class="band bg-white">
     <div class="container">
       <div class="sec-head center reveal">
         <span class="eyebrow center">Partner With Us</span>
-        <h2 class="display">Let's build the future of innovation together.</h2>
-        <p style="margin-left:auto;margin-right:auto">Whether you are deploying capital, building a company, or pursuing innovation-driven growth, Nexus is built to be a long-term partner.</p>
+        <h2 class="display">Three ways to work with Nexus.</h2>
+        <p style="margin-left:auto;margin-right:auto">Whether you deploy capital, build a company, or pursue innovation-driven growth — there is a defined pathway for you.</p>
       </div>
-      <div class="partner-grid">
-        <article class="pcard reveal">
-          <span class="pn">FOR INVESTORS</span>
-          <h3>Investors</h3>
-          <p>For investors seeking access to emerging, high-conviction opportunities across technology and public and private markets.</p>
-          <a href="#contact" class="tlink plink">Connect with our team <span class="arr">→</span></a>
+      <div class="pathways">
+        <article class="path reveal">
+          <div class="top"><span class="pn">For Investors</span><h3>Investors</h3><p>Access high-conviction opportunities across technology and public and private markets.</p></div>
+          <div class="foot" style="padding-top:26px"><a href="partner.html#investors" class="btn btn-ghost">Investor pathway <span class="arr">→</span></a></div>
         </article>
-        <article class="pcard reveal d1">
-          <span class="pn">FOR FOUNDERS</span>
-          <h3>Founders</h3>
-          <p>For founders seeking a strategic partner with capital, operating depth, and genuine long-term alignment.</p>
-          <a href="#contact" class="tlink plink">Start a conversation <span class="arr">→</span></a>
+        <article class="path reveal d1">
+          <div class="top"><span class="pn">For Founders</span><h3>Founders</h3><p>A strategic partner with capital, technical diligence, and operating depth.</p></div>
+          <div class="foot" style="padding-top:26px"><a href="partner.html#founders" class="btn btn-ghost">Founder pathway <span class="arr">→</span></a></div>
         </article>
-        <article class="pcard reveal d2">
-          <span class="pn">FOR PARTNERS</span>
-          <h3>Strategic Partners</h3>
-          <p>For institutions and partners pursuing innovation-driven growth, shared upside, and durable collaboration.</p>
-          <a href="#contact" class="tlink plink">Explore partnership <span class="arr">→</span></a>
+        <article class="path reveal d2">
+          <div class="top"><span class="pn">For Partners</span><h3>Strategic Partners</h3><p>Institutions pursuing innovation-driven growth and shared upside.</p></div>
+          <div class="foot" style="padding-top:26px"><a href="partner.html#partners" class="btn btn-ghost">Partner pathway <span class="arr">→</span></a></div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================ CONTACT ============================ -->
-  <section class="contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-intro">
-        <span class="eyebrow reveal">Contact</span>
-        <h2 class="display reveal d1">Connect with our team.</h2>
-        <p class="lead reveal d2">Whether you have a question about our focus or want to explore an investment or partnership, our team is ready to help.</p>
-        <div class="contact-info reveal d3">
-          <div class="ci">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <div class="t"><small>Office</small><span>8315 Northern Blvd, Jackson Heights, NY 11372</span></div>
-          </div>
-          <div class="ci">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
-            <div class="t"><small>Phone</small><a href="tel:+16072478945">607-247-8945</a></div>
-          </div>
-          <div class="ci">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-            <div class="t"><small>Email</small><a href="mailto:info@nexusinnovationscapital.com">info@nexusinnovationscapital.com</a></div>
-          </div>
-        </div>
-      </div>
-
-      <form class="card reveal d2" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <!-- Replace with your Web3Forms access key (free at web3forms.com). Until then the form shows a friendly fallback. -->
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="New inquiry — Nexus Innovations Capital" />
-        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
-
-        <div class="field row2">
-          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required placeholder="Your name" /></div>
-          <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" placeholder="Company / fund" /></div>
-        </div>
-        <div class="field row2">
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@company.com" /></div>
-          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="Optional" /></div>
-        </div>
-        <div class="field">
-          <label for="interest">Investment or partnership interest</label>
-          <select id="interest" name="interest">
-            <option value="Investor — access to opportunities">Investor — access to opportunities</option>
-            <option value="Founder — seeking strategic support">Founder — seeking strategic support</option>
-            <option value="Strategic partner — innovation growth">Strategic partner — innovation growth</option>
-            <option value="General inquiry">General inquiry</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required placeholder="Tell us a little about what you're looking for."></textarea>
-        </div>
-        <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center">Send message <span class="arr">→</span></button>
-        <p class="form-note">Your information is used only to respond to your inquiry. We never share it.</p>
-        <p class="form-status" id="formStatus"></p>
-      </form>
-    </div>
-  </section>
-
-  <!-- ============================ CTA CLOSE ============================ -->
+  <!-- CTA -->
   <section class="cta-close">
     <div class="container">
       <span class="eyebrow center reveal">Nexus Innovations Capital</span>
       <h2 class="display reveal d1" style="margin-top:18px">Ready to take your ventures <span class="accent">to the next level?</span></h2>
-      <div class="actions reveal d2">
-        <a href="#contact" class="btn btn-gold">Get in touch <span class="arr">→</span></a>
-        <a href="#focus" class="btn btn-ghost">Explore our focus</a>
-      </div>
+      <div class="actions reveal d2"><a href="contact.html" class="btn btn-gold">Get in touch <span class="arr">→</span></a><a href="focus.html" class="btn btn-ghost">Explore our focus</a></div>
     </div>
   </section>
 
 </main>
 
-<!-- ============================ FOOTER ============================ -->
 <footer class="footer">
   <div class="container">
     <div class="foot-grid">
       <div>
         <div class="brand" style="gap:12px">
-          <svg class="seal" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1" y="1" width="38" height="38" rx="7" fill="#0B2145"/>
-            <rect x="1" y="1" width="38" height="38" rx="7" stroke="#B08A4F" stroke-width="1.4"/>
-            <path d="M11 29 V11 L29 29 V11" stroke="#C9A870" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <img class="seal" src="assets/logo-mark.png" alt="Nexus Innovations Capital" />
           <span class="word">Nexus Innovations Capital</span>
         </div>
-        <p class="fabout">A New York innovation and capital firm connecting capital, strategy, innovation, and execution across AI, SaaS, fintech, biotech, Web3, and public and private markets.</p>
+        <p class="fabout">A New York innovation and capital firm connecting capital, strategy, and execution across AI, SaaS, fintech, biotech, Web3, and public and private markets.</p>
         <p class="faddr">8315 Northern Blvd<br/>Jackson Heights, NY 11372<br/>607-247-8945</p>
       </div>
-      <div>
-        <h5>Firm</h5>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#focus">Investment Focus</a></li>
-          <li><a href="#why">Why Nexus</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Explore</h5>
-        <ul>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#partner">Partner With Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="../index.html">Full site ↗</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Connect</h5>
-        <ul>
-          <li><a href="mailto:info@nexusinnovationscapital.com">info@nexusinnovationscapital.com</a></li>
-          <li><a href="tel:+16072478945">607-247-8945</a></li>
-          <li><a href="https://www.linkedin.com/company/nexusinnovationscapital/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-          <li><a href="https://x.com/Nexusventures1" target="_blank" rel="noopener">X (Twitter) ↗</a></li>
-        </ul>
-      </div>
+      <div><h5>Firm</h5><ul><li><a href="about.html">About</a></li><li><a href="focus.html">Investment Focus</a></li><li><a href="why.html">Why Nexus</a></li><li><a href="capabilities.html">Capabilities</a></li></ul></div>
+      <div><h5>Explore</h5><ul><li><a href="team.html">Team</a></li><li><a href="partner.html">Partner With Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="../index.html">Full site ↗</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="mailto:info@nexusinnovationscapital.com">info@nexusinnovationscapital.com</a></li><li><a href="tel:+16072478945">607-247-8945</a></li><li><a href="https://www.linkedin.com/company/nexusinnovationscapital/" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a href="https://x.com/Nexusventures1" target="_blank" rel="noopener">X (Twitter) ↗</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© <span id="yr">2026</span> Nexus Innovations Capital, L.L.C. · New York, NY</span>
       <span><em>Where capital meets intelligent growth.</em></span>
     </div>
-    <p class="foot-legal">
-      Nexus Innovations Capital, L.L.C. (DBA: "Nexus Innovations Capital") is the sole operator of the official website www.nexusinnovationscapital.com. All information related to the Nexus Innovations Capital Fund is provided exclusively through www.nexusinnovationscapital.com. Nexus does not engage in the solicitation, offering, or sale of securities via the internet. Any representations to the contrary, including those made through a website other than www.nexusinnovationscapital.com, are unauthorized and not endorsed by Nexus Innovations Capital.
-    </p>
+    <details class="foot-legal">
+      <summary>Legal &amp; disclosures</summary>
+      <p>Nexus Innovations Capital, L.L.C. (DBA "Nexus Innovations Capital") is the sole operator of the official website www.nexusinnovationscapital.com. All information related to the Nexus Innovations Capital Fund is provided exclusively through this website. Nexus does not engage in the solicitation, offering, or sale of securities via the internet. Any representations to the contrary, including those made through a website other than www.nexusinnovationscapital.com, are unauthorized and not endorsed by Nexus Innovations Capital. This website is for informational purposes only and does not constitute investment advice or an offer to buy or sell any security.</p>
+    </details>
   </div>
 </footer>
 
-<script>
-  // Year
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Sticky header state
-  const header = document.getElementById('header');
-  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
-  onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
-
-  // Mobile menu
-  const menu = document.getElementById('mobileMenu');
-  const openMenu = () => { menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; };
-  const closeMenu = () => { menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
-  document.getElementById('burger').addEventListener('click', openMenu);
-  document.getElementById('mmClose').addEventListener('click', closeMenu);
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
-
-  // Reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold:0.12, rootMargin:'0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // Contact form: graceful handling if the Web3Forms key isn't set yet
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('formStatus');
-  form.addEventListener('submit', async (ev) => {
-    const key = form.querySelector('[name=access_key]').value;
-    if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-      ev.preventDefault();
-      status.style.display = 'block';
-      status.style.color = '#B08A4F';
-      status.textContent = 'Form is ready — add your Web3Forms access key to enable live delivery. Meanwhile, email info@nexusinnovationscapital.com.';
-      return;
-    }
-    ev.preventDefault();
-    status.style.display = 'block';
-    status.style.color = 'var(--muted)';
-    status.textContent = 'Sending…';
-    try {
-      const res = await fetch(form.action, { method:'POST', body:new FormData(form), headers:{ Accept:'application/json' } });
-      if (res.ok){ form.reset(); status.style.color='#1E7A4B'; status.textContent='Thank you — your message has been sent. We’ll be in touch shortly.'; }
-      else { status.style.color='#B00020'; status.textContent='Something went wrong. Please email info@nexusinnovationscapital.com.'; }
-    } catch(_){ status.style.color='#B00020'; status.textContent='Network error. Please email info@nexusinnovationscapital.com.'; }
-  });
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>
