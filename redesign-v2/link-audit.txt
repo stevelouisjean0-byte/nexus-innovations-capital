@@ -1,0 +1,264 @@
+index.html | Skip to content | #main | PASS | ok
+index.html | NEXUSInnovations Capital | index.html | PASS | ok
+index.html | About | about.html | PASS | ok
+index.html | Focus | focus.html | PASS | ok
+index.html | Why Nexus | why.html | PASS | ok
+index.html | Capabilities | capabilities.html | PASS | ok
+index.html | Leadership | leadership.html | PASS | ok
+index.html | Contact | contact.html | PASS | ok
+index.html | Partner With Us | partner.html | PASS | ok
+index.html | Home | index.html | PASS | ok
+index.html | About Us | about.html | PASS | ok
+index.html | Investment Focus | focus.html | PASS | ok
+index.html | Why Nexus | why.html | PASS | ok
+index.html | Capabilities | capabilities.html | PASS | ok
+index.html | Leadership | leadership.html | PASS | ok
+index.html | Partner With Us | partner.html | PASS | ok
+index.html | Contact | contact.html | PASS | ok
+index.html | Partner With Us → | partner.html | PASS | ok
+index.html | Explore Our Focus | focus.html | PASS | ok
+index.html | Partner With Us | partner.html | PASS | ok
+index.html | Learn More About the Firm → | about.html | PASS | ok
+index.html | Artificial Intelligence01 | focus.html#ai | PASS | ok
+index.html | SaaS02 | focus.html#saas | PASS | ok
+index.html | Fintech03 | focus.html#fintech | PASS | ok
+index.html | Biotech04 | focus.html#biotech | PASS | ok
+index.html | Web305 | focus.html#web3 | PASS | ok
+index.html | Public Markets06 | focus.html#public-markets | PASS | ok
+index.html | Private Markets07 | focus.html#private-markets | PASS | ok
+index.html | Founder Support08 | focus.html#founder-support | PASS | ok
+index.html | Explore Our Full Investment Focus → | focus.html | PASS | ok
+index.html | Why Nexus → | why.html | PASS | ok
+index.html | View Capabilities | capabilities.html | PASS | ok
+index.html | Meet Our Leadership → | leadership.html | PASS | ok
+index.html | Investor Pathway → | partner.html#investors | PASS | ok
+index.html | Founder Pathway → | partner.html#founders | PASS | ok
+index.html | Partner Pathway → | partner.html#partners | PASS | ok
+index.html | Explore Partnership Pathways | partner.html | PASS | ok
+index.html | NEXUSInnovations Capital | index.html | PASS | ok
+index.html | About Us | about.html | PASS | ok
+index.html | Investment Focus | focus.html | PASS | ok
+index.html | Why Nexus | why.html | PASS | ok
+index.html | Capabilities | capabilities.html | PASS | ok
+index.html | Leadership | leadership.html | PASS | ok
+index.html | Partner With Us | partner.html | PASS | ok
+index.html | Contact | contact.html | PASS | ok
+index.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+index.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+about.html | Skip to content | #main | PASS | ok
+about.html | NEXUSInnovations Capital | index.html | PASS | ok
+about.html | About | about.html | PASS | ok
+about.html | Focus | focus.html | PASS | ok
+about.html | Why Nexus | why.html | PASS | ok
+about.html | Capabilities | capabilities.html | PASS | ok
+about.html | Leadership | leadership.html | PASS | ok
+about.html | Contact | contact.html | PASS | ok
+about.html | Partner With Us | partner.html | PASS | ok
+about.html | Home | index.html | PASS | ok
+about.html | About Us | about.html | PASS | ok
+about.html | Investment Focus | focus.html | PASS | ok
+about.html | Why Nexus | why.html | PASS | ok
+about.html | Capabilities | capabilities.html | PASS | ok
+about.html | Leadership | leadership.html | PASS | ok
+about.html | Partner With Us | partner.html | PASS | ok
+about.html | Contact | contact.html | PASS | ok
+about.html | Partner With Us → | partner.html | PASS | ok
+about.html | See Where We Invest → | focus.html | PASS | ok
+about.html | Meet Our Leadership | leadership.html | PASS | ok
+about.html | Partner With Us | partner.html | PASS | ok
+about.html | NEXUSInnovations Capital | index.html | PASS | ok
+about.html | About Us | about.html | PASS | ok
+about.html | Investment Focus | focus.html | PASS | ok
+about.html | Why Nexus | why.html | PASS | ok
+about.html | Capabilities | capabilities.html | PASS | ok
+about.html | Leadership | leadership.html | PASS | ok
+about.html | Partner With Us | partner.html | PASS | ok
+about.html | Contact | contact.html | PASS | ok
+about.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+about.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+focus.html | Skip to content | #main | PASS | ok
+focus.html | NEXUSInnovations Capital | index.html | PASS | ok
+focus.html | About | about.html | PASS | ok
+focus.html | Focus | focus.html | PASS | ok
+focus.html | Why Nexus | why.html | PASS | ok
+focus.html | Capabilities | capabilities.html | PASS | ok
+focus.html | Leadership | leadership.html | PASS | ok
+focus.html | Contact | contact.html | PASS | ok
+focus.html | Partner With Us | partner.html | PASS | ok
+focus.html | Home | index.html | PASS | ok
+focus.html | About Us | about.html | PASS | ok
+focus.html | Investment Focus | focus.html | PASS | ok
+focus.html | Why Nexus | why.html | PASS | ok
+focus.html | Capabilities | capabilities.html | PASS | ok
+focus.html | Leadership | leadership.html | PASS | ok
+focus.html | Partner With Us | partner.html | PASS | ok
+focus.html | Contact | contact.html | PASS | ok
+focus.html | Partner With Us → | partner.html | PASS | ok
+focus.html | Partner With Us | partner.html | PASS | ok
+focus.html | View Our Capabilities | capabilities.html | PASS | ok
+focus.html | NEXUSInnovations Capital | index.html | PASS | ok
+focus.html | About Us | about.html | PASS | ok
+focus.html | Investment Focus | focus.html | PASS | ok
+focus.html | Why Nexus | why.html | PASS | ok
+focus.html | Capabilities | capabilities.html | PASS | ok
+focus.html | Leadership | leadership.html | PASS | ok
+focus.html | Partner With Us | partner.html | PASS | ok
+focus.html | Contact | contact.html | PASS | ok
+focus.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+focus.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+why.html | Skip to content | #main | PASS | ok
+why.html | NEXUSInnovations Capital | index.html | PASS | ok
+why.html | About | about.html | PASS | ok
+why.html | Focus | focus.html | PASS | ok
+why.html | Why Nexus | why.html | PASS | ok
+why.html | Capabilities | capabilities.html | PASS | ok
+why.html | Leadership | leadership.html | PASS | ok
+why.html | Contact | contact.html | PASS | ok
+why.html | Partner With Us | partner.html | PASS | ok
+why.html | Home | index.html | PASS | ok
+why.html | About Us | about.html | PASS | ok
+why.html | Investment Focus | focus.html | PASS | ok
+why.html | Why Nexus | why.html | PASS | ok
+why.html | Capabilities | capabilities.html | PASS | ok
+why.html | Leadership | leadership.html | PASS | ok
+why.html | Partner With Us | partner.html | PASS | ok
+why.html | Contact | contact.html | PASS | ok
+why.html | Partner With Us → | partner.html | PASS | ok
+why.html | Explore Partnership Pathways → | partner.html | PASS | ok
+why.html | See How We Work → | capabilities.html | PASS | ok
+why.html | Partner With Us | partner.html | PASS | ok
+why.html | Contact the Firm | contact.html | PASS | ok
+why.html | NEXUSInnovations Capital | index.html | PASS | ok
+why.html | About Us | about.html | PASS | ok
+why.html | Investment Focus | focus.html | PASS | ok
+why.html | Why Nexus | why.html | PASS | ok
+why.html | Capabilities | capabilities.html | PASS | ok
+why.html | Leadership | leadership.html | PASS | ok
+why.html | Partner With Us | partner.html | PASS | ok
+why.html | Contact | contact.html | PASS | ok
+why.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+why.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+capabilities.html | Skip to content | #main | PASS | ok
+capabilities.html | NEXUSInnovations Capital | index.html | PASS | ok
+capabilities.html | About | about.html | PASS | ok
+capabilities.html | Focus | focus.html | PASS | ok
+capabilities.html | Why Nexus | why.html | PASS | ok
+capabilities.html | Capabilities | capabilities.html | PASS | ok
+capabilities.html | Leadership | leadership.html | PASS | ok
+capabilities.html | Contact | contact.html | PASS | ok
+capabilities.html | Partner With Us | partner.html | PASS | ok
+capabilities.html | Home | index.html | PASS | ok
+capabilities.html | About Us | about.html | PASS | ok
+capabilities.html | Investment Focus | focus.html | PASS | ok
+capabilities.html | Why Nexus | why.html | PASS | ok
+capabilities.html | Capabilities | capabilities.html | PASS | ok
+capabilities.html | Leadership | leadership.html | PASS | ok
+capabilities.html | Partner With Us | partner.html | PASS | ok
+capabilities.html | Contact | contact.html | PASS | ok
+capabilities.html | Partner With Us → | partner.html | PASS | ok
+capabilities.html | Partner With Us | partner.html | PASS | ok
+capabilities.html | Contact the Firm | contact.html | PASS | ok
+capabilities.html | NEXUSInnovations Capital | index.html | PASS | ok
+capabilities.html | About Us | about.html | PASS | ok
+capabilities.html | Investment Focus | focus.html | PASS | ok
+capabilities.html | Why Nexus | why.html | PASS | ok
+capabilities.html | Capabilities | capabilities.html | PASS | ok
+capabilities.html | Leadership | leadership.html | PASS | ok
+capabilities.html | Partner With Us | partner.html | PASS | ok
+capabilities.html | Contact | contact.html | PASS | ok
+capabilities.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+capabilities.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+leadership.html | Skip to content | #main | PASS | ok
+leadership.html | NEXUSInnovations Capital | index.html | PASS | ok
+leadership.html | About | about.html | PASS | ok
+leadership.html | Focus | focus.html | PASS | ok
+leadership.html | Why Nexus | why.html | PASS | ok
+leadership.html | Capabilities | capabilities.html | PASS | ok
+leadership.html | Leadership | leadership.html | PASS | ok
+leadership.html | Contact | contact.html | PASS | ok
+leadership.html | Partner With Us | partner.html | PASS | ok
+leadership.html | Home | index.html | PASS | ok
+leadership.html | About Us | about.html | PASS | ok
+leadership.html | Investment Focus | focus.html | PASS | ok
+leadership.html | Why Nexus | why.html | PASS | ok
+leadership.html | Capabilities | capabilities.html | PASS | ok
+leadership.html | Leadership | leadership.html | PASS | ok
+leadership.html | Partner With Us | partner.html | PASS | ok
+leadership.html | Contact | contact.html | PASS | ok
+leadership.html | Partner With Us → | partner.html | PASS | ok
+leadership.html | Partner With Us | partner.html | PASS | ok
+leadership.html | Contact the Firm | contact.html | PASS | ok
+leadership.html | NEXUSInnovations Capital | index.html | PASS | ok
+leadership.html | About Us | about.html | PASS | ok
+leadership.html | Investment Focus | focus.html | PASS | ok
+leadership.html | Why Nexus | why.html | PASS | ok
+leadership.html | Capabilities | capabilities.html | PASS | ok
+leadership.html | Leadership | leadership.html | PASS | ok
+leadership.html | Partner With Us | partner.html | PASS | ok
+leadership.html | Contact | contact.html | PASS | ok
+leadership.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+leadership.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+partner.html | Skip to content | #main | PASS | ok
+partner.html | NEXUSInnovations Capital | index.html | PASS | ok
+partner.html | About | about.html | PASS | ok
+partner.html | Focus | focus.html | PASS | ok
+partner.html | Why Nexus | why.html | PASS | ok
+partner.html | Capabilities | capabilities.html | PASS | ok
+partner.html | Leadership | leadership.html | PASS | ok
+partner.html | Contact | contact.html | PASS | ok
+partner.html | Partner With Us | partner.html | PASS | ok
+partner.html | Home | index.html | PASS | ok
+partner.html | About Us | about.html | PASS | ok
+partner.html | Investment Focus | focus.html | PASS | ok
+partner.html | Why Nexus | why.html | PASS | ok
+partner.html | Capabilities | capabilities.html | PASS | ok
+partner.html | Leadership | leadership.html | PASS | ok
+partner.html | Partner With Us | partner.html | PASS | ok
+partner.html | Contact | contact.html | PASS | ok
+partner.html | Contact the Firm → | contact.html | PASS | ok
+partner.html | Start an Investor Conversation | contact.html | PASS | ok
+partner.html | Pitch Nexus | contact.html | PASS | ok
+partner.html | Explore Partnership | contact.html | PASS | ok
+partner.html | Contact the Firm | contact.html | PASS | ok
+partner.html | NEXUSInnovations Capital | index.html | PASS | ok
+partner.html | About Us | about.html | PASS | ok
+partner.html | Investment Focus | focus.html | PASS | ok
+partner.html | Why Nexus | why.html | PASS | ok
+partner.html | Capabilities | capabilities.html | PASS | ok
+partner.html | Leadership | leadership.html | PASS | ok
+partner.html | Partner With Us | partner.html | PASS | ok
+partner.html | Contact | contact.html | PASS | ok
+partner.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+partner.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+contact.html | Skip to content | #main | PASS | ok
+contact.html | NEXUSInnovations Capital | index.html | PASS | ok
+contact.html | About | about.html | PASS | ok
+contact.html | Focus | focus.html | PASS | ok
+contact.html | Why Nexus | why.html | PASS | ok
+contact.html | Capabilities | capabilities.html | PASS | ok
+contact.html | Leadership | leadership.html | PASS | ok
+contact.html | Contact | contact.html | PASS | ok
+contact.html | Partner With Us | partner.html | PASS | ok
+contact.html | Home | index.html | PASS | ok
+contact.html | About Us | about.html | PASS | ok
+contact.html | Investment Focus | focus.html | PASS | ok
+contact.html | Why Nexus | why.html | PASS | ok
+contact.html | Capabilities | capabilities.html | PASS | ok
+contact.html | Leadership | leadership.html | PASS | ok
+contact.html | Partner With Us | partner.html | PASS | ok
+contact.html | Contact | contact.html | PASS | ok
+contact.html | Partner With Us → | partner.html | PASS | ok
+contact.html | 607-247-8945 | tel:+16072478945 | PASS | external:tel
+contact.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
+contact.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+contact.html | Partner With Us | partner.html | PASS | ok
+contact.html | NEXUSInnovations Capital | index.html | PASS | ok
+contact.html | About Us | about.html | PASS | ok
+contact.html | Investment Focus | focus.html | PASS | ok
+contact.html | Why Nexus | why.html | PASS | ok
+contact.html | Capabilities | capabilities.html | PASS | ok
+contact.html | Leadership | leadership.html | PASS | ok
+contact.html | Partner With Us | partner.html | PASS | ok
+contact.html | Contact | contact.html | PASS | ok
+contact.html | LinkedIn | https://www.linkedin.com/company/nexusinnovationscapital/ | PASS | external
+contact.html | info@nexusinnovationscapital.com | mailto:info@nexusinnovationscapital.com | PASS | external:mailto
