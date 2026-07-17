@@ -58,6 +58,26 @@
     sync();
   });
 
+  // Sector accordion: hover/focus expands a panel; on touch, first tap
+  // expands and second tap follows the link.
+  var acc = document.getElementById('sectorAcc');
+  if (acc) {
+    var panels = acc.querySelectorAll('a');
+    var setActive = function (panel) {
+      panels.forEach(function (p) { p.classList.toggle('active', p === panel); });
+    };
+    panels.forEach(function (panel) {
+      panel.addEventListener('mouseenter', function () { setActive(panel); });
+      panel.addEventListener('focus', function () { setActive(panel); });
+      panel.addEventListener('click', function (e) {
+        if (!panel.classList.contains('active')) {
+          e.preventDefault();
+          setActive(panel);
+        }
+      });
+    });
+  }
+
   // Contact / inquiry form: validation styling + confirmation state.
   // Submission backend not yet connected (Web3Forms key pending) — the form
   // validates and confirms locally so the flow can be reviewed end to end.

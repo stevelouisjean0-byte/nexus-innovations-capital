@@ -184,6 +184,35 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
 .focus-mini .nm{font-family:'Newsreader',serif;font-weight:500;font-size:19px;color:var(--navy)}
 .focus-mini .num{font-family:'Newsreader',serif;font-size:13px;color:var(--gold)}
 
+/* ---- Sector accordion (interactive image accordion, 21st.dev pattern) ---- */
+.sector-acc{display:flex;gap:10px;height:440px}
+.sector-acc a{position:relative;flex:1;min-width:52px;display:block;overflow:hidden;border-radius:4px;text-decoration:none;background:var(--navy-deep);transition:flex .65s var(--ease)}
+.sector-acc a.active{flex:5}
+.sector-acc a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.9);transition:transform .8s var(--ease)}
+.sector-acc a.active img{transform:scale(1.03)}
+.sector-acc a::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,23,51,.85) 0%,rgba(7,23,51,.35) 50%,rgba(7,23,51,.2) 100%)}
+.sector-acc a::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--gold);z-index:3;opacity:0;transition:opacity .4s var(--ease)}
+.sector-acc a.active::before{opacity:1}
+.sector-acc .lbl{position:absolute;z-index:2;color:#FDFDFB;font-family:'Newsreader',serif;font-weight:500;font-size:19px;letter-spacing:.02em;white-space:nowrap;left:50%;bottom:22px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;transition:opacity .3s var(--ease)}
+.sector-acc a.active .lbl{writing-mode:horizontal-tb;transform:none;left:24px;bottom:38px;font-size:23px}
+.sector-acc .hint{position:absolute;z-index:2;left:24px;bottom:16px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-bright);opacity:0;transition:opacity .4s var(--ease) .2s}
+.sector-acc a.active .hint{opacity:1}
+.sector-acc a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.acc-more{margin-top:26px;font-size:14px;color:var(--muted)}
+.acc-more a{color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold)}
+.acc-more a:hover{color:var(--gold)}
+@media(max-width:760px){
+  .sector-acc{flex-direction:column;height:auto;gap:8px}
+  .sector-acc a{min-width:0;min-height:58px;flex:none;height:58px;transition:height .5s var(--ease)}
+  .sector-acc a.active{flex:none;height:280px}
+  .sector-acc .lbl{writing-mode:horizontal-tb;transform:none;left:20px;bottom:16px;font-size:18px}
+  .sector-acc a.active .lbl{left:20px;bottom:34px;font-size:21px}
+  .sector-acc .hint{left:20px;bottom:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sector-acc a,.sector-acc a img,.sector-acc .lbl,.sector-acc .hint{transition:none}
+}
+
 /* ---- Detail article blocks (focus / capabilities pages) ---- */
 .detail-list{max-width:1240px;margin:0 auto;display:flex;flex-direction:column}
 .detail{display:grid;grid-template-columns:minmax(220px,.85fr) 2fr;gap:clamp(28px,4vw,72px);padding:clamp(40px,5vw,56px) 0;border-bottom:1px solid var(--line)}
