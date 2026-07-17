@@ -71,6 +71,8 @@ Consistent two-font system (Newsreader + Helvetica), tokenized navy/gold/charcoa
 9. **Placement:** About §Approach; Focus intro; Capabilities header band.
 10. **Status: Partially Passed** — premium video is meaningfully integrated (hero requirement met); custom branded graphics are not yet present.
 
+**Update (post-audit):** an interactive sector accordion (21st.dev interactive-image-accordion pattern, custom-built in vanilla JS/CSS to match the design system) now anchors the homepage Investment Focus section — hover/focus-expanding image panels for AI, Fintech, Biotech, Web3, and Markets, each deep-linking into the Focus page. All imagery visually verified before use. This adds the "interactive visual storytelling" element; custom diagrams remain the outstanding recommendation.
+
 ## 14. Mobile Testing
 
 Breakpoints reviewed at 960/1000/760/640/560/520 px: nav→burger menu, all grids collapse to defined column counts (no orphan cells at any width), form single-column, no fixed widths that force horizontal scroll, touch targets ≥44 px. Real-device pass **Unable to Verify** in this environment — recommend a 5-minute phone check. **Passed by code review.**
