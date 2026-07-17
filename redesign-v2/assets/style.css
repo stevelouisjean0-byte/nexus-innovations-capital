@@ -221,6 +221,7 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
 @media(max-width:640px){.leader-grid{grid-template-columns:1fr}}
 .lcard{background:var(--white);padding:38px 32px;display:flex;flex-direction:column;gap:14px}
 .lcard .avatar{width:76px;height:76px;border-radius:50%;background:var(--navy);color:var(--gold-bright);display:flex;align-items:center;justify-content:center;font-family:'Newsreader',serif;font-size:26px;letter-spacing:.04em;border:1px solid var(--gold)}
+.lcard .photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;border-radius:2px;filter:saturate(.92);border-bottom:2px solid var(--gold)}
 .lcard h3{font-family:'Newsreader',serif;font-weight:500;font-size:23px;color:var(--navy)}
 .lcard .role{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);margin-top:-6px}
 .lcard p{font-size:14.5px;line-height:1.68;color:var(--muted);margin:0}

@@ -100,7 +100,7 @@ None blocking. Notes: `index-original.html` (2.1 MB legacy bundle) remains in th
 | # | Page/Section | Problem | Correction | Priority |
 |---|---|---|---|---|
 | 1 | Contact — form | Submissions don't deliver (no backend) | Add Web3Forms/Formspree key + endpoint | **Critical** |
-| 2 | Leadership — profiles | Monogram avatars, not photography | Commission consistent partner headshots | High |
+| 2 | Leadership — profiles | ~~Monogram avatars, not photography~~ **Resolved:** official portraits pulled from nexusinnovationscapital.com, bios matched to production site verbatim | — | Done |
 | 3 | Capabilities / Focus / About | No custom branded graphics | Add process + markets diagrams in Nexus line style | High |
 | 4 | All — local images | JPEGs unoptimized (99–520 KB) | Convert to WebP ≤150 KB | Medium |
 | 5 | Contact — address | Jackson Heights vs. NYC-skyline positioning | Client to confirm publish address | Medium |
