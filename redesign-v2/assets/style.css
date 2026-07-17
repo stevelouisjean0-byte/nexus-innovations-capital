@@ -222,6 +222,23 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
 .lcard{background:var(--white);padding:38px 32px;display:flex;flex-direction:column;gap:14px}
 .lcard .avatar{width:76px;height:76px;border-radius:50%;background:var(--navy);color:var(--gold-bright);display:flex;align-items:center;justify-content:center;font-family:'Newsreader',serif;font-size:26px;letter-spacing:.04em;border:1px solid var(--gold)}
 .lcard .photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;border-radius:2px;filter:saturate(.92);border-bottom:2px solid var(--gold)}
+.lcard .plink{text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);transition:color .25s var(--ease);margin-top:auto;padding-top:6px}
+.lcard .plink:hover{color:var(--gold)}
+
+/* ---- Partner profile pages ---- */
+.bio-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(280px,.72fr) 1.28fr;gap:clamp(44px,5vw,90px);align-items:start}
+@media(max-width:860px){.bio-grid{grid-template-columns:1fr}}
+.bio-photo-wrap{position:sticky;top:100px}
+@media(max-width:860px){.bio-photo-wrap{position:static;max-width:420px}}
+.bio-photo-wrap img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;display:block;border-radius:2px;box-shadow:var(--shadow-md);border-bottom:3px solid var(--gold)}
+.bio-body p{font-size:16.5px;line-height:1.8;color:var(--muted);margin:0 0 20px}
+.bio-body p:first-of-type{font-size:18px;color:var(--ink)}
+.bio-body h2{font-family:'Newsreader',serif;font-weight:500;font-size:24px;color:var(--navy);margin:38px 0 16px}
+.bio-body ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 32px}
+.bio-body ul li{font-size:15px;color:var(--muted);padding:10px 0 10px 24px;position:relative;border-bottom:1px solid var(--line)}
+.bio-body ul li::before{content:"";position:absolute;left:0;top:19px;width:12px;height:1.5px;background:var(--gold)}
+.bio-back{display:inline-flex;align-items:center;gap:8px;margin-bottom:26px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-bright);text-decoration:none}
+.bio-back:hover{color:#fff}
 .lcard h3{font-family:'Newsreader',serif;font-weight:500;font-size:23px;color:var(--navy)}
 .lcard .role{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);margin-top:-6px}
 .lcard p{font-size:14.5px;line-height:1.68;color:var(--muted);margin:0}
