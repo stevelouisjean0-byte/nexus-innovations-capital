@@ -40,18 +40,18 @@ img{max-width:100%}
 /* ---- Flickering star on the logo ---- */
 .logo-wrap{position:relative;display:inline-block;line-height:0}
 .logo-wrap img{display:block;width:100%;height:100%;object-fit:contain}
-.logo-wrap .star-flick{position:absolute;left:66%;top:0;width:25%;height:25%;pointer-events:none;animation:starFlicker 2.8s ease-in-out infinite}
+.logo-wrap .star-flick{position:absolute;left:60%;top:-5%;width:36%;height:36%;pointer-events:none;animation:starFlicker 2.8s ease-in-out infinite}
 .logo-wrap .star-flick svg{width:100%;height:100%;display:block;overflow:visible}
 @keyframes starFlicker{
-  0%   {opacity:.25; filter:drop-shadow(0 0 1px rgba(201,168,112,.4));}
-  12%  {opacity:.9;  filter:drop-shadow(0 0 5px rgba(201,168,112,.95)) drop-shadow(0 0 10px rgba(201,168,112,.5));}
-  22%  {opacity:.5;  filter:drop-shadow(0 0 2px rgba(201,168,112,.5));}
-  34%  {opacity:1;   filter:drop-shadow(0 0 6px rgba(201,168,112,1)) drop-shadow(0 0 14px rgba(201,168,112,.6));}
-  47%  {opacity:.65; filter:drop-shadow(0 0 3px rgba(201,168,112,.6));}
-  60%  {opacity:.95; filter:drop-shadow(0 0 5px rgba(201,168,112,.9)) drop-shadow(0 0 11px rgba(201,168,112,.5));}
-  76%  {opacity:.4;  filter:drop-shadow(0 0 2px rgba(201,168,112,.45));}
-  88%  {opacity:.85; filter:drop-shadow(0 0 4px rgba(201,168,112,.85));}
-  100% {opacity:.25; filter:drop-shadow(0 0 1px rgba(201,168,112,.4));}
+  0%   {opacity:.55; filter:drop-shadow(0 0 3px rgba(232,205,154,.7)) drop-shadow(0 0 7px rgba(201,168,112,.45));}
+  12%  {opacity:1;   filter:drop-shadow(0 0 7px rgba(255,240,210,1)) drop-shadow(0 0 14px rgba(232,205,154,.85)) drop-shadow(0 0 24px rgba(201,168,112,.55));}
+  22%  {opacity:.7;  filter:drop-shadow(0 0 4px rgba(232,205,154,.75)) drop-shadow(0 0 9px rgba(201,168,112,.5));}
+  34%  {opacity:1;   filter:drop-shadow(0 0 9px rgba(255,244,220,1)) drop-shadow(0 0 18px rgba(232,205,154,.9)) drop-shadow(0 0 30px rgba(201,168,112,.6));}
+  47%  {opacity:.8;  filter:drop-shadow(0 0 5px rgba(232,205,154,.8)) drop-shadow(0 0 10px rgba(201,168,112,.5));}
+  60%  {opacity:1;   filter:drop-shadow(0 0 7px rgba(255,240,210,.95)) drop-shadow(0 0 15px rgba(232,205,154,.8)) drop-shadow(0 0 25px rgba(201,168,112,.55));}
+  76%  {opacity:.6;  filter:drop-shadow(0 0 3px rgba(232,205,154,.7)) drop-shadow(0 0 8px rgba(201,168,112,.45));}
+  88%  {opacity:.95; filter:drop-shadow(0 0 6px rgba(255,240,210,.9)) drop-shadow(0 0 13px rgba(232,205,154,.75));}
+  100% {opacity:.55; filter:drop-shadow(0 0 3px rgba(232,205,154,.7)) drop-shadow(0 0 7px rgba(201,168,112,.45));}
 }
 @media(prefers-reduced-motion:reduce){
   .logo-wrap .star-flick{animation:none;opacity:.9}
@@ -106,14 +106,14 @@ img{max-width:100%}
 .hero-frame video,.hero-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:none;opacity:1}
 .hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,rgba(11,33,69,0) 40%,rgba(11,33,69,.4));pointer-events:none}
 .hero-visual .corner{position:absolute;top:-14px;right:-14px;width:88px;height:88px;border-top:2px solid var(--gold);border-right:2px solid var(--gold)}
-.vidctl{position:absolute;left:14px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;background:rgba(7,23,51,.55);backdrop-filter:blur(6px);border:1px solid var(--line-on-navy);color:#fff;border-radius:40px;padding:8px 14px;font-size:12px;letter-spacing:.04em;cursor:pointer;transition:background .3s var(--ease);font-family:inherit}
+.vidctl{position:absolute;right:14px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:8px;background:rgba(7,23,51,.55);backdrop-filter:blur(6px);border:1px solid var(--line-on-navy);color:#fff;border-radius:40px;padding:8px 14px;font-size:12px;letter-spacing:.04em;cursor:pointer;transition:background .3s var(--ease);font-family:inherit}
 .vidctl:hover{background:rgba(7,23,51,.8)}
 .vidctl svg{width:13px;height:13px}
-.float-card{position:absolute;left:-26px;bottom:34px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 20px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:16px;z-index:3}
+.float-card{position:absolute;left:-26px;bottom:-26px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:14px 18px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:14px;z-index:3}
 .float-card .k{font-family:'Newsreader',serif;font-size:28px;color:var(--navy);line-height:1}
 .float-card .divv{width:1px;height:38px;background:var(--line)}
 .float-card .v{font-size:12px;color:var(--muted);letter-spacing:.04em;max-width:15ch}
-@media(max-width:900px){.float-card{left:12px}.hero-frame{max-height:none}}
+@media(max-width:900px){.float-card{left:12px;bottom:-20px}.hero-frame{max-height:none}}
 .hero .statrow{display:flex;gap:clamp(32px,6vw,90px);margin-top:72px;padding-top:32px;border-top:1px solid rgba(234,240,250,.15);flex-wrap:wrap}
 .hero .statrow .k{font-family:'Newsreader',serif;font-size:30px;color:#FDFDFB}
 .hero .statrow .v{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(234,240,250,.55);margin-top:6px}
@@ -245,7 +245,7 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
       <span class="logo-wrap">
         <img class="logo-light" src="assets/logo-mark-light.png" alt="Nexus Innovations Capital monogram">
         <img class="logo-dark" src="assets/logo-mark.png" alt="">
-        <span class="star-flick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0c.6 6.6 2.4 9 12 12-9.6 3-11.4 5.4-12 12-.6-6.6-2.4-9-12-12 9.6-3 11.4-5.4 12-12z" fill="#C9A870"/></svg></span>
+        <span class="star-flick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0c.6 6.6 2.4 9 12 12-9.6 3-11.4 5.4-12 12-.6-6.6-2.4-9-12-12 9.6-3 11.4-5.4 12-12z" fill="#E8CD9A"/><path d="M12 5.5c.35 3.85 1.4 5.25 7 7-5.6 1.75-6.65 3.15-7 7-.35-3.85-1.4-5.25-7-7 5.6-1.75 6.65-3.15 7-7z" fill="#FFF6E0"/></svg></span>
       </span>
       <span class="word">
         <span class="nx">NEXUS</span>
@@ -474,7 +474,7 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
         <div class="brandline">
           <span class="logo-wrap">
             <img src="assets/logo-mark-light.png" alt="Nexus Innovations Capital monogram">
-            <span class="star-flick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0c.6 6.6 2.4 9 12 12-9.6 3-11.4 5.4-12 12-.6-6.6-2.4-9-12-12 9.6-3 11.4-5.4 12-12z" fill="#C9A870"/></svg></span>
+            <span class="star-flick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0c.6 6.6 2.4 9 12 12-9.6 3-11.4 5.4-12 12-.6-6.6-2.4-9-12-12 9.6-3 11.4-5.4 12-12z" fill="#E8CD9A"/><path d="M12 5.5c.35 3.85 1.4 5.25 7 7-5.6 1.75-6.65 3.15-7 7-.35-3.85-1.4-5.25-7-7 5.6-1.75 6.65-3.15 7-7z" fill="#FFF6E0"/></svg></span>
           </span>
           <span style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
             <span class="nx">NEXUS</span>
