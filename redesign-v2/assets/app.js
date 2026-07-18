@@ -78,6 +78,27 @@
     });
   }
 
+  // Zoom parallax: scroll progress drives layer scale via the --p variable.
+  var zp = document.getElementById('zoomPx');
+  if (zp && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var zpMsg = document.getElementById('zpMsg');
+    var zpTick = false;
+    var zpUpdate = function () {
+      zpTick = false;
+      var r = zp.getBoundingClientRect();
+      var total = r.height - window.innerHeight;
+      if (total <= 0) return;
+      var p = Math.min(1, Math.max(0, -r.top / total));
+      zp.style.setProperty('--p', p.toFixed(4));
+      if (zpMsg) zpMsg.classList.toggle('faded', p > 0.35);
+    };
+    window.addEventListener('scroll', function () {
+      if (!zpTick) { zpTick = true; requestAnimationFrame(zpUpdate); }
+    }, { passive: true });
+    window.addEventListener('resize', zpUpdate);
+    zpUpdate();
+  }
+
   // Contact / inquiry form: validation styling + confirmation state.
   // Submission backend not yet connected (Web3Forms key pending) — the form
   // validates and confirms locally so the flow can be reviewed end to end.

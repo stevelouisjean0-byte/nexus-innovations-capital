@@ -224,6 +224,42 @@ p.body{font-size:16.5px;line-height:1.75;color:var(--muted)}
 .detail .fact .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:7px}
 .detail .fact .v{font-size:14.5px;line-height:1.65;color:var(--muted)}
 
+/* ---- Zoom parallax (scroll-driven convergence band) ---- */
+.zoompx{position:relative;height:260vh;background:var(--navy-deep)}
+.zp-sticky{position:sticky;top:0;height:100vh;overflow:hidden}
+.zp-layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform:scale(calc(1 + (var(--k,4) - 1) * var(--p,0)));will-change:transform}
+.zp-cell{position:relative;width:25vw;height:25vh}
+.zp-cell img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}
+.zp-cell::after{content:"";position:absolute;inset:0;background:rgba(7,23,51,.35)}
+.zp-l1 .zp-cell{top:-30vh;left:5vw;height:30vh;width:35vw}
+.zp-l2 .zp-cell{top:-10vh;left:-25vw;height:45vh;width:20vw}
+.zp-l3 .zp-cell{top:27.5vh;left:5vw;height:25vh;width:20vw}
+.zp-l4 .zp-cell{top:24vh;left:-24vw;height:25vh;width:28vw}
+.zp-msg{position:absolute;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;opacity:calc(1 - var(--p,0) * 2.2);transform:scale(calc(1 - var(--p,0) * .5))}
+.zp-msg.faded{pointer-events:none}
+.zp-msg .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-bright);margin-bottom:20px}
+.zp-msg h2{font-family:'Newsreader',serif;font-weight:500;font-size:clamp(32px,4.2vw,58px);line-height:1.1;color:#FDFDFB;max-width:18ch;margin:0 0 22px;text-wrap:balance;text-shadow:0 2px 24px rgba(7,23,51,.7)}
+.zp-msg p{font-size:clamp(15px,1.3vw,18px);line-height:1.65;color:rgba(234,240,250,.85);max-width:52ch;margin:0 0 34px;text-shadow:0 1px 12px rgba(7,23,51,.7)}
+.zp-msg .actions{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.zp-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:10;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(234,240,250,.55);opacity:calc(1 - var(--p,0) * 4)}
+@media(max-width:760px){
+  .zoompx{height:200vh}
+  .zp-cell{width:44vw;height:22vh}
+  .zp-l1 .zp-cell{top:-26vh;left:6vw;width:48vw;height:24vh}
+  .zp-l2 .zp-cell{top:-26vh;left:-40vw;width:36vw;height:24vh}
+  .zp-l3 .zp-cell{top:24vh;left:28vw;width:36vw;height:20vh}
+  .zp-l4 .zp-cell{top:24vh;left:-28vw;width:44vw;height:20vh}
+}
+@media(prefers-reduced-motion:reduce){
+  .zoompx{height:auto}
+  .zp-sticky{position:relative;height:100vh}
+  .zp-layer{transform:none}
+  .zp-layer:not(.zp-l0){display:none}
+  .zp-l0 .zp-cell{width:100%;height:100%;top:0;left:0}
+  .zp-msg{opacity:1;transform:none}
+  .zp-hint{display:none}
+}
+
 /* ---- Investment process diagram ---- */
 .proc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,48px);position:relative;max-width:1240px}
 .proc::before{content:"";position:absolute;top:32px;left:12.5%;right:12.5%;height:1.5px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-bright) 100%);z-index:0}
